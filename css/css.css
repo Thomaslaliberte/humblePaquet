@@ -162,10 +162,21 @@ width: 200px;
 .livre{
     width: 200px;
     margin: 10px;
+    transition-property: all;
+    transition-duration: 700ms;
+    border-radius: 7px;
     
 }
 #ensemble{
 display: flex;
 flex-wrap: wrap;
 align-items: stretch;
+}
+
+.livre:hover{
+    scale: 110%;
+    border-color: #169fe3;
+    border:solid var(--couleur-background-bouton-hover);
+
+    box-shadow: 0 0 10px var(--couleur-background-bouton-hover);
 }
