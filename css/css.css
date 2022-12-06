@@ -1,6 +1,6 @@
 @font-face {
-    font-family: maximum-impact;
-    src: url("webfonts/Maximum-Impact.ttf");
+    font-family: "maximum-impact";
+    src: url("../webfonts/Maximum-Impact.ttf");
 }
 :root{
 --couleur-background: #282c34;
@@ -11,13 +11,161 @@
 --couleur-background-bouton-hover:	#3794c3;
 }
 html{
-    margin: 0;
+    margin: 40px;
     height: 100%;
     width: 100;
+    
+}
+body{
     display: grid;
     grid-template-areas: 
-    "main" "side"
+    "main side"
     ;
-    grid-template-columns: ;
+    grid-template-columns: 60% 40%;
+    background-color: var(--couleur-background);
+    gap: 0px 20px;
 }
 
+#entete{
+    width: 100%;
+}
+.maximum{
+    font-family: "maximum-impact";
+}
+
+#main{
+    grid-area: main;
+}
+#side{
+    grid-area: side;
+    margin: 30px;
+    
+}
+
+
+#article{
+ border-radius: 20px;
+ background-color: #3794c3;
+ width: 200px;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ background-color: var(--couleur-background-bouton);
+ margin: 10px;
+}
+.texte{
+    color: var(--couleur-texte);
+}
+#boutons{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+.grostexte{
+    font-size: larger;
+}
+.icon{
+    display: grid;
+    grid-template-areas: 
+    "argent personnes"
+    "livre fichier"
+    ;
+}
+
+#argent{
+    grid-area: argent;
+
+}
+#livre{
+    grid-area: livre;
+    
+}
+#personne{
+    grid-area: personnes;
+}
+#fichier{
+    grid-area: fichier;
+}
+.icons{
+    margin: 5px;
+}
+.formulaire{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin: 4px;
+    background-color: var(--couleur-background-bouton);
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+#form{
+    flex-wrap: wrap;
+
+}
+.CA{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    background-color: var(--couleur-background-bouton);
+    align-items: center;
+}
+input{
+    width: 370px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    background-color: var(--couleur-background-bouton);
+    align-items: center;
+    border: none;
+}
+.validation {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    background-color: var(--couleur-background-bouton-hover);
+    align-items: center;
+    cursor: pointer;
+}
+.messageCollecte{
+  border: 1mm solid var(--couleur-background-bouton) ;
+  height: 100px;
+  width: 465px;
+  margin: 15px;
+
+}
+.coeur{
+    color: var(--couleur-texte-bleu);
+   
+}
+fieldset.avecicone legend {
+    margin-left: -23px;
+    color:var(--couleur-texte-bleu);
+}
+.ranger {
+    display:flex ;
+
+    align-items: stretch;
+}
+.element{
+width: 200px;
+
+}
+.livre{
+    width: 200px;
+    margin: 10px;
+    
+}
+#ensemble{
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+}

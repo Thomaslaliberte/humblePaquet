@@ -2,13 +2,78 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Humble Paquet</title>
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/css.css">
         <script defer src="js/script.js"></script>
     </head>
 
     <body>
-       <h1><img src="images/entete_opaque.png" alt="entete"></h1>
+        <div id="main">
+            <img id="entete" src="images/entete_opaque.png" alt="entete">
+            <h1 class="maximum texte">Lot de livres</h2>
+            <p class="texte">Filtres de lots</p>
+            <div id="boutons">
+                <div id="article" class="texte">lot complet de 14 articles</div>
+                <div id="article" class="texte">lot de 10 articles</div>
+                <div id="article" class="texte">lot de 5 articles</div>
+            </div>
+            <div id="prix"></div>
+            <div id="ensemble"> 
+                <div class="livre texte"><img class="element"  src="../images/livres/livre01.avif" alt="livre">Angular Up & Running</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre02.avif" alt="livre">HTML5 Hacks</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre03.avif" alt="livre">Data visualisation with Pyton and Java</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre04.avif" alt="livre">Learning PHP, MySOL & JavaScript</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre05.avif" alt="livre">Flask web development</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre06.avif" alt="livre">Learning GraphQL</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre07.avif" alt="livre">Distributed Systems with Node.js</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre08.avif" alt="livre">programming PHP</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre09.avif" alt="livre">Learning JavaScript</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre10.avif" alt="livre">programming TypeScript</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre11.avif" alt="livre">Multithreaded JavaScript</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre12.avif" alt="livre">Effective TYpeScript</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre13.avif" alt="livre">react cookbook</div>
+                <div class="livre texte"><img class="element"  src="../images/livres/livre14.avif" alt="livre">Learning PHP, MySQL, & JavaScript</div>
+            </div>
+        </div>
+        <div id="side">
+            <h2 id="maitriser" class="maximum texte ">Maitrisez et développement d'application Web</h2>
+            <p class="texte grostexte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Dolor sit amet consectetur adipiscing elit duis. Nunc non blandit massa enim nec. Pretium nibh ipsum consequat nisl vel. Euismod elementum nisi quis eleifend quam. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Vitae congue mauris rhoncus aenean vel. Mi proin sed libero enim sed faucibus. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget.</p>
+            <div class="icon">
+                <i id="argent" class="fas fa-dollar-sign texte grostexte icons"> payer 1,35$CA ou plus</i>
+                <i id="personne"class="fas fa-people-carry texte grostexte icons"> 6 534 Vendus</i>
+                <div><i id="livre" class="fas fa-book-open texte grostexte icons"> Utiliser n'importe quel appareil</i></div>
+                <i id="fichier" class="fas fa-file texte grostexte icons"> PDF, ePUB et MOBI</i>
+                
+            </div>
+            <fieldset class="avecicone">
+             <legend><i class="fas fa-heart coeur"></i></legend>
+
+            </fieldset>
+            
+            <h1 id="valeur" class="texte grostexte">valeur de 808,58 $CA - Payez ce que vous voulez</h1>
+            <p class="texte">payer moins pour moins d'articles, ou payez plus pour donner plus aux éditeurs, à Humble et aux associations caritatives</p>
+            <form id="form" action="">
+                <div class="ranger">
+                <div class="formulaire texte">1,35 $CA</div>
+                <div class="formulaire texte">13,54 $CA</div>
+                <div class="formulaire texte">24,37 $CA</div>
+                </div>
+                <div class="ranger">
+                <div class="formulaire texte">30 $CA</div>
+                <div class="formulaire texte">35 $CA</div>
+                <div class="formulaire texte">40 $CA</div>
+                </div>
+                <div class="ranger">
+                <div class="CA texte">$CA</div>
+                <input type="number" id="input" class="texte" placeholder="autre montant">
+                </div>
+                <div class="texte validation">validation</div>
+            </form>
+        </div>
     </body>
 </html>   
+
+
+
+
