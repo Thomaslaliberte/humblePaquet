@@ -43,15 +43,15 @@ body{
 }
 
 
-#article{
+.article{
  border-radius: 20px;
- background-color: #3794c3;
  width: 200px;
  justify-content: center;
  align-items: center;
  display: flex;
  background-color: var(--couleur-background-bouton);
  margin: 10px;
+ cursor: pointer;
 }
 .texte{
     color: var(--couleur-texte);
@@ -116,7 +116,7 @@ body{
     align-items: center;
 }
 input{
-    width: 370px;
+    
     height: 50px;
     display: flex;
     justify-content: center;
@@ -124,6 +124,7 @@ input{
     background-color: var(--couleur-background-bouton);
     align-items: center;
     border: none;
+    flex: 1;
 }
 .validation {
     flex: 1;
@@ -179,4 +180,33 @@ align-items: stretch;
     border:solid var(--couleur-background-bouton-hover);
 
     box-shadow: 0 0 10px var(--couleur-background-bouton-hover);
+}
+@media screen and (max-width: 900px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "main"
+        "side"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        background-color: var(--couleur-background);
+        width: 100%;
+        gap: 0px 0px ;
+        }
+        
+}
+.choisie{
+    background-color: whitesmoke;
+    color: var(--couleur-background-bouton);
+    border-radius: 20px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
 }
